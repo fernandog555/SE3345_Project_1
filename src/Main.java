@@ -11,6 +11,7 @@ public class Main
         boolean programRunning = true;
         int choice;
 
+        // Keep the program running until the user exits out. 
         while(programRunning)
         {
             System.out.println("\n/** Operations on List **/\n");
@@ -25,6 +26,9 @@ public class Main
 
             System.out.print("\nEnter your choice: ");
 
+            // Catch any inputs from the user that are not allowed, such as letters, special characters, etc. 
+            // The input will only accept integers. If we find an error, we throw a warning message to the user 
+            // and prompt them to try again.
             try
             {
                 choice = scan.nextInt();
@@ -117,6 +121,7 @@ public class Main
                         System.out.print("Enter ID to delete: ");
                         int idToDelete = scan.nextInt();
                         scan.nextLine();
+                        
                         Product deleted = list.delete(idToDelete);
                         if (deleted != null)
                         {
@@ -145,7 +150,7 @@ public class Main
                          */
 
                         programRunning = false;
-                        System.out.println("\nGoodbye!");
+                        System.out.println("\List will be deleted. Goodbye!");
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
                     default:
@@ -163,6 +168,6 @@ public class Main
                 scan.nextLine();
             }
         }
-        scan.close();
+        scan.close(); // added this to make the java compiler to shut up lmao
     }
 }
