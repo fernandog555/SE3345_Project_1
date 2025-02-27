@@ -41,6 +41,7 @@ public class Main
                          *  Clear out the entire linked list.
                          */
 
+                        System.out.println("\n--- DELETE LIST ----");
                         System.out.println("The list has been deleted.");
                         list.makeEmpty();
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
@@ -52,6 +53,7 @@ public class Main
                          *  If ID is not found, print error message.
                          */
 
+                        System.out.println("\n--- FIND ID ----");
                         System.out.print("Enter ID: ");
                         int searchID = scan.nextInt();
 
@@ -72,6 +74,7 @@ public class Main
                          *  Input all the product details associated with the ID, and add to the front of the list.
                          */
 
+                        System.out.println("\n--- INSERT AT FRONT ----");
                         System.out.print("Enter Product ID: ");
                         int id = scan.nextInt();
                         scan.nextLine();
@@ -89,7 +92,7 @@ public class Main
                         }
                         else
                         {
-                            System.out.println("Error: Product ID already exists! Please try again.");
+                            System.out.println("\nError: Product ID already exists! Please try again.");
                         }
 
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
@@ -100,15 +103,16 @@ public class Main
                          *  Print the ID details from the first item on the list, then delete.
                          */
 
+                        System.out.println("\n--- DELETE FROM FRONT ----");
                         Product deletedFront = list.deleteFromFront();
                         if (deletedFront != null)
                         {
                             deletedFront.printID();
-                            System.out.println("First item deleted.");
+                            System.out.println("\nFirst item deleted.");
                         }
                         else
                         {
-                            System.out.println("List is empty.");
+                            System.out.println("\nWarning: List is empty. There is nothing to delete!");
                         }
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
@@ -118,6 +122,7 @@ public class Main
                          *  Print the ID detail of the selected product, then delete.
                          */
 
+                        System.out.println("\n--- DELETE ID ----");
                         System.out.print("Enter ID to delete: ");
                         int idToDelete = scan.nextInt();
                         scan.nextLine();
@@ -126,11 +131,11 @@ public class Main
                         if (deleted != null)
                         {
                             deleted.printID();
-                            System.out.println("Product deleted successfully!");
+                            System.out.println("\nProduct deleted successfully!");
                         }
                         else
                         {
-                            System.out.println("ID not found.");
+                            System.out.println("\nID not found.");
                         }
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
@@ -140,6 +145,7 @@ public class Main
                          *  Traverse the linked list and print all the records.
                          */
 
+                        System.out.println("\n--- PRINT ALL RECORDS ----");
                         list.printAllRecords();
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
@@ -150,6 +156,8 @@ public class Main
                          */
 
                         programRunning = false;
+
+                        System.out.println("\n--- EXIT ----");
                         System.out.println("\nList will be deleted. Goodbye!");
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
@@ -157,14 +165,14 @@ public class Main
                         /*
                          * Incorrect input, prompt to retry again.
                          */
-                        System.out.println("Error: Invalid choice. Please enter a number between 1 and 7.");
+                        System.out.println("\nError: Invalid choice. Please enter a number between 1 and 7.");
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
                 }
             }
             catch (InputMismatchException e)
             {
-                System.out.println("Error: Invalid input. Please enter a valid integer.");
+                System.out.println("\nError: Invalid input. Please enter a valid integer.");
                 scan.nextLine();
             }
         }

@@ -6,7 +6,7 @@ public class GenericSingleLinkedList<AnyType extends IDedObject>
     {
         // Creating a brand new linked list
         head = null;
-        System.out.println("\nLinked list has been created.");
+        System.out.println("\nLinked list has been initialized.");
     } 
 
     void makeEmpty()

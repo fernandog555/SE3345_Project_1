@@ -67,6 +67,7 @@ My program has input validation and error catching functionalities. To begin, we
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: delete
+
     Error: Invalid input. Please enter a valid integer.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,6 +77,7 @@ The program only accepts integers from the user when selecting an option. Let tr
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 8
+
     Error: Invalid choice. Please enter a number between 1 and 7.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,6 +87,9 @@ In our menu, there only exists options 1-7. Option 8 is not a valid option. Lets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 4
+
+    --- DELETE FROM FRONT ----
+
     Warning: List is empty. There is nothing to delete!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,8 +100,10 @@ so. Lets try to enter choice "2" and input any ID value. Remember that we have n
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 2
+
+    --- FIND ID ----
     Enter ID: 123
-    
+
     ID not found! Please try again.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +113,10 @@ Now lets select the same choice again, but this time we will input "Banana" as o
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 2
+
+    --- FIND ID ----
     Enter ID: Banana
+
     Error: Invalid input. Please enter a valid integer.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,10 +127,12 @@ consistent throughout the entire program. Now lets add a new product! Enter choi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 3
+
+    --- INSERT AT FRONT ----
     Enter Product ID: 123
     Enter Product Name: iPhone 16
     Enter Supplier Name: Apple
-    
+
     Product has been added successfully!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,6 +142,8 @@ We have added a product to the beginning of the list. Lets attempt to add anothe
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 3
+
+    --- INSERT AT FRONT ----
     Enter Product ID: 123
     Enter Product Name: AirPods
     Enter Supplier Name: Apple
@@ -143,10 +157,12 @@ Now lets continue with the functionality of the program. We can add back the Air
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 3
+
+    --- INSERT AT FRONT ----
     Enter Product ID: 256
     Enter Product Name: AirPods
     Enter Supplier Name: Apple
-    
+
     Product has been added successfully!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,6 +173,8 @@ no cap to the number of items we can add (we are limited to RAM size but that do
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 3
+
+    --- INSERT AT FRONT ----
     Enter Product ID: 1024
     Enter Product Name: iPad Pro
     Enter Supplier Name: Apple
@@ -166,6 +184,8 @@ no cap to the number of items we can add (we are limited to RAM size but that do
     ....
 
     Enter your choice: 3
+
+    --- INSERT AT FRONT ----
     Enter Product ID: 2048
     Enter Product Name: AirTag
     Enter Supplier Name: Apple
@@ -180,7 +200,9 @@ all the records in the list.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 6
-    
+
+    --- PRINT ALL RECORDS ----
+
     Product ID: 2048
     Product Name: AirTag
     Supplier Name: Apple
@@ -208,8 +230,10 @@ choosing option "2" on the main menu.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 2
+
+    --- FIND ID ----
     Enter ID: 256
-    
+
     Product ID: 256
     Product Name: AirPods
     Supplier Name: Apple
@@ -221,6 +245,8 @@ Say we want to discontinue an item. We can delete items by their ID (option 5) o
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 5
+
+    --- DELETE ID ----
     Enter ID to delete: 2048
     
     Product ID: 2048
@@ -246,6 +272,8 @@ If we print out all records, the AirTag is no longer there.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 6
+
+    --- PRINT ALL RECORDS ----
     
     Product ID: 1024
     Product Name: iPad Pro
@@ -269,11 +297,15 @@ the list and see that it has been cleared.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Enter your choice: 1
+
+    --- DELETE LIST ----
     The list has been deleted.
 
     ....
 
     Enter your choice: 6
+
+    --- PRINT ALL RECORDS ----
     Linked list is empty.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -284,7 +316,11 @@ gets deleted anyways (Theres no function to save data yet).
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
     Enter your choice: 7
-    
+
+    --- EXIT ----
+
     List will be deleted. Goodbye!
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+That's pretty much it for the readme. Thanks for reading if you made it down here <3
