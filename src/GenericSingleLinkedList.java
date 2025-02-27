@@ -100,14 +100,20 @@ public class GenericSingleLinkedList<AnyType extends IDedObject>
             return null;
         }
 
+        // If the ID from the first node matches the ID the user inputted, call deleteFromFront 
+        // and let that method handle the logic. 
         if (head.data.getID() == ID)
         {
             return deleteFromFront();
         }
 
+        // Assign current pointer to the list head. We do this because we need to traverse 
+        // through the linked list to find the ID that the user requested.
         Node<AnyType> current = head;
         while (current.next != null)
         {
+            // If we find the node that matches the ID, we create a temporary node that will hold
+            // the data of the node to be deleted so we can display back the information to the user.
             if (current.next.data.getID() == ID)
             {
                 AnyType removedData = current.next.data;
@@ -118,7 +124,7 @@ public class GenericSingleLinkedList<AnyType extends IDedObject>
         }
         return null;
     }
-
+    
     public void printAllRecords()
     {
         // We check if the head is null first. If it is, tell the user that it's empty.
@@ -128,6 +134,8 @@ public class GenericSingleLinkedList<AnyType extends IDedObject>
             return;
         }
 
+        // Traverse through the list and retrieve the data from the current node, and print it
+        // out to the user, then move on to the next node  and repeat until we reach the tail of the list. 
         Node<AnyType> current = head;
         while (current != null)
         {
