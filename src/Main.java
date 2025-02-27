@@ -158,7 +158,7 @@ public class Main
                         programRunning = false;
 
                         System.out.println("\n--- EXIT ----");
-                        System.out.println("\nList will be deleted. Goodbye!");
+                        System.out.println("List will be deleted. Goodbye!");
                         System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                         break;
                     default:
