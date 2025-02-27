@@ -173,6 +173,7 @@ public class Main
             catch (InputMismatchException e)
             {
                 System.out.println("\nError: Invalid input. Please enter a valid integer.");
+                System.out.println("\n/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/");
                 scan.nextLine();
             }
         }
